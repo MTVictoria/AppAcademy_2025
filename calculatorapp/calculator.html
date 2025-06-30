@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calc">
+    <input id="display" class="calc__display" value="0" readonly aria-label="Calculator display" />
+    <div class="calc__keys">
+      <!-- digits -->
+      <button data-key="7" class="digit">7</button>
+      <button data-key="8" class="digit">8</button>
+      <button data-key="9" class="digit">9</button>
+      <button data-key="*" class="op">×</button>
+
+      <button data-key="4" class="digit">4</button>
+      <button data-key="5" class="digit">5</button>
+      <button data-key="6" class="digit">6</button>
+      <button data-key="-" class="op">−</button>
+
+      <button data-key="1" class="digit">1</button>
+      <button data-key="2" class="digit">2</button>
+      <button data-key="3" class="digit">3</button>
+      <button data-key="+" class="op">+</button>
+
+      <button data-key="0" class="digit span-2">0</button>
+      <button data-key="." class="digit">.</button>
+      <button data-key="/" class="op">÷</button>
+
+      <button id="clear" class="clear">AC</button>
+      <button id="equals" class="equals span-3">=</button>
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
