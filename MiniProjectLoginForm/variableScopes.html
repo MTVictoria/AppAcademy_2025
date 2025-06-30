@@ -1,0 +1,16 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <p id="outputText"></p>
+    <script>
+        var globalVariable = 10;
+
+        function outerFunction() {
+            var someVariable = 20;
+            document.getElementById("outputText").innerHTML = globalVariable
+        }
+    </script>
+</body>
+</html>

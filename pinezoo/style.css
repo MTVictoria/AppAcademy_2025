@@ -1,0 +1,198 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    background-image: url('zoo.jpg');
+
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    background-image: url('zoo.jpg');
+    background-repeat: repeat-x;
+}
+#header img {
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 10px;
+}
+
+#tabs-top {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+}
+#tabs-top a {
+    float: left;
+    display: block;
+    width: 30%;
+    height: 33px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#main-home img {
+    width: 100%;
+    max-width: 10880px;
+    display: block;
+    margin: 0 auto;
+}
+
+#tabs-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    transition: background 0.3s;
+}
+#tabs-bottom a {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 35px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#main {
+    margin-top: 100px;
+    background: url('zoo.jpg');
+    background-size: 100%;
+    width: 100%;
+}
+
+
+a.info-box {
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin-top: 5px;
+    padding: 30px;
+    border-radius: 20000px;
+    border: 5px solid #000000b1;
+    transition: background 0.3s;
+}
+a.info-box:hover {
+    background: #ffffff;
+    cursor: pointer;
+}
+.info-box img {
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border-radius: 50px;
+}
+.info-box h3 {
+    padding: 0;
+    margin-bottom: 10;
+    width: 50%;
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info-box p {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #000000;
+}
+.info-box img.right {
+    float: right;
+    margin-top: 35px;
+    height: 50px;
+}
+
+.info-box-full {
+    background: linear-gradient( #000000 100%);
+    border-radius: 18px;
+    padding: 320px 220px 220px 220px;
+    margin: 320px auto 10 auto;
+    max-width: 5000px;
+    width: 80%;
+    border: 2px solid #ffffff;
+    transition: box-shadow 0.3s;
+}
+.info-box-full h2 {
+    color: #e48686;
+    margin-top: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    letter-spacing: 1px;
+}
+.info-box-full p {
+    color: #ffffff;
+    margin-bottom: 14px;
+    font-size: 1.08em;
+}
+
+
+
+
+img.info-box-weather-icon{
+     height : 50px;
+     width  : 50px;
+     margin : 30px;
+     float  :left; 
+}
+
+h1.info-box-weather-icon{
+     font-size  : 65px;
+     font-weight: 2000;
+     padding    : 0;
+     margin     : 0;
+}
+input{
+      width: 50%;
+      height: 25px;
+      margin : 12px 450px;
+      border : 2px solid #ffffff;
+      border-radius: 20000px;
+    border: 5px solid #fdfcfc;
+}
+
+textarea{
+      width: 50%;
+      height :25px;
+      margin : 12px 450px;
+      border : 1px solid #ffffff;
+      border-radius: 20000px;
+    border: 5px solid #fdfcfc;
+}
+
+.button{
+      display : block;
+      background-color: rgb(0, 0, 0);
+      text-align  : center;
+      color       : rgb(255, 255, 255);
+      font-size   : 16px;
+      font-weight : 6090;
+      margin : 2px 450px;
+      padding : 15px 0;
+      width: 50%;
+border-radius: 20000px;
+    border: 5px solid #fdfcfc;
+}
+
+h3.

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+</head>
+<body onload="fetchContacts()">
+    <div id="table">Contacts loading...</div>
+    <button id="refresh" type="button">Refresh</button>
+    <button id="AddContact" type="button" onclick="addContact()">Add Contact</button>
+    <script src="config.js"></script>
+    <script>
+        document.getElementById("refresh").addEventListener("click", fetchContacts);
+        document.getElementById("AddContact").addEventListener("click", addContact);
+
+        function fetchContacts() {
+            fetch(rootPath + 'controller/get-contacts/')
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    displayOutput(data);
+                })
+                .catch(function(error) {
+                    console.error('Error:', error);
+                    document.getElementById("table").innerHTML = "Error loading contacts";
+                });
+        }
+
+        function displayOutput(data) {
+            let output = "<table>";
+            for(let a in data) {
+                output += `
+                <tr onclick="editContact(${data[a].id})">
+                    <td><img src='${rootPath}controller/uploads/${data[a].avatar}' width='40'/></td>
+                    <td><h5>${data[a].firstname}</h5></td>
+                    <td><h5>${data[a].lastname}</h5></td>
+                </tr>`;
+            }
+            output += "</table>";
+            document.getElementById("table").innerHTML = output;
+        }
+
+        function addContact() {
+            window.open("add-contact.html", "_self");
+        }
+        function editContact(id) {
+            window.open("edit-contact.html?id=" + id, "_self");
+        }
+    </script>
+</body>
+</html>

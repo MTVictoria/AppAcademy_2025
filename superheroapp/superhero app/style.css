@@ -1,0 +1,62 @@
+h1 {
+    accent-color: rgb(11, 22, 73);
+    font-family:'Times New Roman', Times, serif;
+}
+
+p {
+    color: rgb(42, 49, 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+#menu-bar {
+    background: url('images/marvel-comics-the-avengers.jpg') center/cover no-repeat;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#menu-bar a {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: rgb(132, 69, 235); 
+    color: #ffffff;
+    padding: 8px 18px;
+    border: 2px solid #32025f;
+    border-radius: 8px;
+    margin: 0 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+#menu-bar ul {
+    list-style: none;
+    padding: 10;
+    margin: 10;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+#menu-bar li {
+    display: inline-block;
+}
+
+#menu-bar a:hover {
+    background-color: rgba(186, 70, 190, 0.95); 
+    color: #000000;
+    border-color: #150436;
+}
+
+.gallery img {
+    width: 65%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <p id="outputText"></p>
+        <script>
+            var text1="10"
+            var text2="20"
+            var num1= StringToNumber(text1);
+            var num2= StringToNumber(text2);
+            document.getElementById("outputText").innerHTML=num1-num2;
+            function StringToNumber(text) {
+                
+                return parseInt(text);
+            }
+        </script>
+    </body>
+
+</html>
